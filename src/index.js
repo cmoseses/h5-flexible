@@ -1,2 +1,9 @@
+import "amfe-flexible";
+import "minireset.css";
+
 import "../style/index.scss";
-alert(1);
+
+console.log(
+  "font size:",
+  document.getElementsByTagName("html")[0].style.fontSize
+);

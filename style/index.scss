@@ -1,3 +1,22 @@
-header {
-    background: red;
+@function px2rem($px) {
+  // design is based on iphone8 width 375px / 10
+  $rem: 37.5px;
+  @return ($px / $rem) +rem;
+}
+
+.pageNavList {
+  height: px2rem(40px);
+  text-align: center;
+  .pageNavList__item {
+    font-size: px2rem(11.25px);
+    display: inline-block;
+    color: #fff;
+    list-style: none;
+    opacity: 0.75;
+    line-height: px2rem(40px);
+    &.active {
+      opacity: 1;
+    }
+  }
+  background: red;
 }

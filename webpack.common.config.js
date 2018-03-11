@@ -11,7 +11,6 @@ module.exports = {
     publicPath: "/dist/"
   },
 
-
   resolve: {
     extensions: [".js"]
   },

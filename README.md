@@ -4,6 +4,7 @@
 * flexible
 * scss
 * markman / sketch
+* BEM
 
 ### How do I get set up? ###
 
