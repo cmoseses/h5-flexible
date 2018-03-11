@@ -2,7 +2,14 @@
 
 * rem
 * flexible
+* scss
 * markman / sketch
+
+### How do I get set up? ###
+
+* yarn install
+* yarn start
+* localhost:8080
 
 apply 
 

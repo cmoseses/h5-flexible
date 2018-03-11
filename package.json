@@ -1,0 +1,29 @@
+{
+  "name": "h5-flexible",
+  "version": "1.0.0",
+  "description": "* rem * flexible * scss * markman / sketch",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmoseses/h5-flexible.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmoseses/h5-flexible/issues"
+  },
+  "homepage": "https://github.com/cmoseses/h5-flexible#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.10",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "webpack": "^3.11.0",
+    "webpack-cli": "^2.0.11",
+    "webpack-dev-server": "^2.11.2"
+  }
+}
