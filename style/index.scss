@@ -4,9 +4,27 @@
   @return ($px / $rem) +rem;
 }
 
+.clearfix {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.pageLogo {
+  text-align: center;
+  .pageLogo__img {
+    width: 2.4rem;
+    height: 0.5rem;
+    margin: 0.2rem;
+  }
+}
+
 .pageNavList {
   height: px2rem(40px);
   text-align: center;
+  background: #f33;
   .pageNavList__item {
     font-size: px2rem(11.25px);
     display: inline-block;
@@ -14,9 +32,88 @@
     list-style: none;
     opacity: 0.75;
     line-height: px2rem(40px);
+    span {
+      padding: 0 0.2rem;
+    }
     &.active {
       opacity: 1;
     }
+    &:not(:first-child):before {
+      content: "/";
+      display: inline-block;
+      color: #d51c1c;
+    }
   }
-  background: red;
+}
+
+.banner {
+  position: relative;
+  .banner__img {
+    width: 100%;
+  }
+  .banner__title {
+    font-size: 0.32rem;
+    width: 6.9rem;
+    height: 0.9rem;
+    line-height: 1rem;
+    color: #fff;
+    font-family: "微软雅黑";
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 0.3rem;
+  }
+}
+
+.newsContentList {
+  .newsContentList__item {
+    position: relative;
+    font-size: 0.24rem;
+    padding: 0.2rem 0;
+    border-bottom: 1px solid #e5e5e5;
+    margin: 0 0.3rem;
+    overflow: hidden;
+  }
+  .newsContentList__img {
+    float: left;
+    width: 19%;
+    height: 1.4rem;
+    margin-right: 0.2rem;
+  }
+  .newsContentList__title {
+    font-size: 0.34rem;
+    color: #404040;
+    line-height: 0.42rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+  }
+  .newsContentList__time {
+    color: #888;
+    font-size: 0.24rem;
+    position: relative;
+    bottom: -0.25rem;
+    float: left;
+  }
+  .newsContentList__count {
+    color: #888;
+    font-size: 0.24rem;
+    position: relative;
+    bottom: -0.25rem;
+    float: right;
+    right: 0;
+    &:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      width: 0.34667rem;
+      height: 0.34667rem;
+      background-size: contain;
+      top: 0rem;
+      left: -0.45333rem;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAnklEQVQ4je2TsQ2DQBRDPQIjMAojsEFuBDYIne3q2IQRWCEjMAIbJM1dFH0BoY5iyc29/61f+AAAJJPt+6djdigi2uvu+1zhkvqgoqavkizje8k18rktub8qlhnujg2stpxze/l77ygAAOoFe+xSwCX2D/iZgK9l2VGp+AiSben9M3iRNBcvkZf/0e6FAwBs93XYdn84eCbbg+3hboyfcjl8fjqq1ecaaaaasuvork5cyii=);
+    }
+  }
 }
